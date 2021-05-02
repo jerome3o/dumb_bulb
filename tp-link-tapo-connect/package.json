@@ -1,0 +1,58 @@
+{
+  "_from": "tp-link-tapo-connect",
+  "_id": "tp-link-tapo-connect@1.0.3",
+  "_inBundle": false,
+  "_integrity": "sha512-NiRrFYSKUY3hLHMIRk1EU0PyM5gpcyRJd3kLg9uAD6vBi5KSLKfTEwColpV2QvmyCrDvFhiNoe2eGg6Un5ufVQ==",
+  "_location": "/tp-link-tapo-connect",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "tp-link-tapo-connect",
+    "name": "tp-link-tapo-connect",
+    "escapedName": "tp-link-tapo-connect",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/tp-link-tapo-connect/-/tp-link-tapo-connect-1.0.3.tgz",
+  "_shasum": "360ad48f811de74a2be29a66d80aa3485516aaf9",
+  "_spec": "tp-link-tapo-connect",
+  "_where": "/home/jerome/source/scratch/node/dumbbulb",
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/dickydoouk/tp-link-tapo-connect/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "axios": "^0.21.1",
+    "local-devices": "^3.1.0"
+  },
+  "deprecated": false,
+  "description": "JS Library for connecting to TP-Link Tapo devices",
+  "devDependencies": {
+    "@types/jest": "^26.0.20",
+    "jest": "^26.6.3",
+    "ts-jest": "^26.4.4",
+    "tslint": "^6.1.3",
+    "typescript": "^4.1.3"
+  },
+  "homepage": "https://github.com/dickydoouk/tp-link-tapo-connect#readme",
+  "license": "ISC",
+  "main": "dist/api.js",
+  "name": "tp-link-tapo-connect",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dickydoouk/tp-link-tapo-connect.git"
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "jest --watchAll"
+  },
+  "types": "dist/api.d.ts",
+  "version": "1.0.3"
+}
