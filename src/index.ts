@@ -14,7 +14,7 @@ import express, { query } from "express";
 config();
 const app = express();
 
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 8002;
 const ip = process.env.DEVICEIP;
 const email = process.env.EMAIL;
 const password = process.env.PASSWORD;
