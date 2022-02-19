@@ -2,10 +2,16 @@ FROM node:14.16.1
 
 WORKDIR /app
 COPY package*.json ./
-RUN [ "npm", "install" ]
+COPY tp-link-tapo-connect/ ./tp-link-tapo-connect
+COPY tsconfig.json ./
 
-ADD . ./
-RUN rm ./.env
+RUN ["npm", "install", "-g", "typescript"]
+RUN ["npm", "install" ]
+
+COPY src/ ./src
+COPY tp-link-tapo-connect/ ./tp-link-tapo-connect
+
+RUN ["npm", "run", "build"]
 
 EXPOSE 8002
 
