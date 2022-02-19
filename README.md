@@ -1,6 +1,8 @@
 # HTTP API for controlling a Tapo L530 Smart Bulb
 
-This is a service exposing an HTTP API that will relay commands to a Tapo Smart bulb on your localnetwork.
+This is a service exposing an HTTP API that will relay commands to a Tapo Smart bulb on your local network.
+
+This is effectively just a http service exposing the [dickydoouk/tp-link-tapo-connect](https://github.com/dickydoouk/tp-link-tapo-connect) api
 
 ## Setup
 
