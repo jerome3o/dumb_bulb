@@ -1,10 +1,8 @@
 import {
   turnOn,
   turnOff,
-  setBrightness,
   setLightParams,
   loginDeviceByIp,
-  setColourTemperature,
   getDeviceInfo,
   LightParams,
 } from "../tp-link-tapo-connect";
@@ -47,9 +45,9 @@ async function doThingIfAllgood<T>(
 ): Promise<string> {
   if (check(value)) {
     await iotFunction(await token(), value);
-    return "Noice";
+    return "success";
   }
-  return "Not noice";
+  return "failure, TODO: better errors";
 }
 
 async function token() {
@@ -63,7 +61,7 @@ app.get("/off", async (req, resp) => {
 
 app.get("/on", async (req, resp) => {
   await turnOn(await token());
-  resp.send("hello world");
+  resp.send("success");
 });
 
 app.get("/colour", async (req, resp) => {
