@@ -8,11 +8,14 @@ import {
 } from "../tp-link-tapo-connect";
 import { config } from "dotenv";
 import express, { query } from "express";
+import morgan from "morgan";
 
 config();
 const app = express();
 
-const port = process.env.PORT || 8002;
+app.use(morgan(':date[iso] :remote-addr :method :url :status :res[content-length] - :response-time ms'));
+
+const port = process.env.PORT || 3000;
 const ip = process.env.DEVICEIP;
 const email = process.env.EMAIL;
 const password = process.env.PASSWORD;
